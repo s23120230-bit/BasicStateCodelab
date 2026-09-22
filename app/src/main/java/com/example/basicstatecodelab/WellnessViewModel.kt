@@ -3,6 +3,7 @@ package com.example.basicstatecodelab
 import androidx.compose.runtime.toMutableStateList
 import androidx.lifecycle.ViewModel
 
+// ViewModel que administra el estado de la lista de tareas de bienestar
 class WellnessViewModel : ViewModel() {
     private val _tasks = getWellnessTasks().toMutableStateList()
     val tasks: List<WellnessTask>
